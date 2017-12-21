@@ -1,0 +1,31 @@
+.sidebar-wrap{
+	height: 100%;
+	background-color: #F5F7FA;
+	.sidebar-name{
+		background-color: #D9DFE5;
+		font-size: 16px;
+		color: #333;
+		padding: 20px;
+		font-weight: bold;
+	}
+	.el-menu{
+		border-right: none;
+	}
+	.el-menu-item{
+		position: relative;
+		&.is-active{
+			background-color: #fff !important;
+			.el-icon-arrow-right{
+				display: none;
+			}
+		}
+		&:hover{
+			background-color: #f1f1f1 !important;
+		}
+		.el-icon-arrow-right{
+			position: absolute;
+			right: 16px;
+			top: 20px;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+// 重置样式
+@import "_reset.scss";
+// 常用变量
+@import "_var.scss";
+
+// 引入mixin
+@import "_mixin.scss";
+
+// 引入通用样式
+@import "_common.scss";
+// 头部
+@import "_header.scss";
+
+// 侧边栏
+ @import "_sidebar.scss";

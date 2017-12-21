@@ -1,0 +1,27 @@
+
+.header-bar{
+	height: 100%;
+	background-color: $header-bg;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	padding : 5px 80px 5px 30px;
+	.logo{
+		@include icon(70px,24px,'logo');
+		width: 70px;
+		height: 24px;
+		margin-right: 22px;
+	}
+	.title{
+		flex : 1;
+		font-size: 16px;
+	}
+	.user-info-wrap{
+		display: flex;
+	}
+	.el-dropdown-link{
+		font-size: 14px;
+		color: #fff;
+	}
+
+}
