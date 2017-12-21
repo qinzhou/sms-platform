@@ -1,0 +1,18 @@
+.c-title{
+	position: relative;
+	color: #333;
+	font-size: 18px;
+	
+	text-indent : 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $gray;
+	&:after{
+		content : '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 4px;
+		height: 24px;
+		background-color: $primary;
+	}
+}

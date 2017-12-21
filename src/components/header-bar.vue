@@ -13,10 +13,10 @@
 			    <el-dropdown-item>蚵仔煎</el-dropdown-item>
 			  </el-dropdown-menu>
 			</el-dropdown>
-			<div class="notice-wrap">
-
+			<div class="icon-notice">
+				<div class="badges">3</div>
 			</div>
-			<i class="icon-help"></i>
+			<a href="" class="icon-help"></a>
 		</div>
 	</div>
 </template>

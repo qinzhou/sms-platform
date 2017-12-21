@@ -54,7 +54,7 @@ export default new Router({
       		component: authorize,
       	},
       ]
-    }
-
-  ]
+    },
+  ],
+   mode : 'history'
 })

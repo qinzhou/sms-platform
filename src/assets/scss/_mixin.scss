@@ -1,4 +1,5 @@
 @mixin icon($width,$height,$src){
+	display: inline-block;
 	width : $width;
 	height : $height;
 	background: url('~@/assets/img/'+$src+'.png') center center no-repeat;
