@@ -4,3 +4,71 @@
 .icon-help{
 	@include icon(24px,24px,'icon-help');
 }
+.icon-overview{
+	@include icon(18px,18px,'icon-overview');
+}
+.icon-overview-active{
+	@include icon(18px,18px,'icon-overview-active');
+}
+.icon-task{
+	@include icon(18px,18px,'icon-task');
+}
+.icon-task-active{
+	@include icon(18px,18px,'icon-task-active');
+}
+.icon-module{
+	@include icon(18px,18px,'icon-module');
+}
+.icon-module-active{
+	@include icon(18px,18px,'icon-module-active');
+}
+.icon-port{
+	@include icon(18px,18px,'icon-port');
+}
+.icon-port-active{
+	@include icon(18px,18px,'icon-port-active');
+}
+.icon-business{
+	@include icon(18px,18px,'icon-business');
+}
+.icon-business-active{
+	@include icon(18px,18px,'icon-business-active');
+}
+.icon-authorize{
+	@include icon(18px,18px,'icon-authorize');
+}
+.icon-authorize-active{
+	@include icon(18px,18px,'icon-authorize-active');
+}
+.icon-import{
+	@include icon(18px,18px,'icon-import');
+}
+.icon-import-active{
+	@include icon(18px,18px,'icon-import-active');
+}
+
+.icon-back{
+	@include icon(24px,24px,'icon-back');
+}
+.icon-save-module{
+	@include icon(18px,18px,'icon-save-module');
+}
+.icon-save{
+	@include icon(18px,18px,'icon-save');
+}
+.icon-commit{
+	@include icon(18px,18px,'icon-commit');
+}
+.icon-play{
+	@include icon(18px,18px,'icon-play');
+}
+
+.icon-address{
+	@include icon(22px,22px,'icon-address');
+}
+.icon-area{
+	@include icon(22px,22px,'icon-area');
+}
+.icon-select{
+	@include icon(22px,22px,'icon-select');
+}

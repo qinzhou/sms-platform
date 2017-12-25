@@ -11,6 +11,7 @@ const module = reslove => require(['@/container/module'], reslove);
 const port = reslove => require(['@/container/port'], reslove);
 const business = reslove => require(['@/container/business'], reslove);
 const authorize = reslove => require(['@/container/authorize'], reslove);
+const population = reslove => require(['@/container/population'], reslove);
 export default new Router({
   routes: [
     {
@@ -55,6 +56,12 @@ export default new Router({
       	},
       ]
     },
+    {
+      path : '/population',
+      name : 'population',
+      component : population
+
+    }
   ],
    mode : 'history'
 })

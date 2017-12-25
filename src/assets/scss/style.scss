@@ -15,3 +15,16 @@
 
 // 侧边栏
  @import "_sidebar.scss";
+
+// 任务管理
+ @import "_task.scss";
+
+ // 人口密度
+ @import "_population.scss";
+
+// 人口密度头部
+ @import "_population-header.scss";
+// 人口密度侧边栏
+ @import "_population-aside.scss";
+ // 人口密度主体
+ @import "_population-main.scss";
