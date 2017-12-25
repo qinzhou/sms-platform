@@ -3,7 +3,7 @@
 		<div class="logo"></div>
 		<h1 class="title">智信·短信平台</h1>
 		<div class="user-info-wrap">
-			<div class="avatar"></div>
+			<img class="avatar" src="../assets/img/avatar.jpg" />
 			<el-dropdown :hide-on-click="false">
 			  <span class="el-dropdown-link">
 			    李大牛<i class="el-icon-arrow-down el-icon--right"></i>

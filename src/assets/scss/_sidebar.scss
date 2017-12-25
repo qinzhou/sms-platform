@@ -13,11 +13,25 @@
 	}
 	.el-menu-item{
 		position: relative;
+		[class^=icon-]{
+			margin-right: 5px;
+		}
+		[class$=-active]{
+			display: none;
+		}
 		&.is-active{
+			color : #2C7CDB !important;
 			background-color: #fff !important;
-			.el-icon-arrow-right{
+			// .el-icon-arrow-right{
+			// 	display: none;
+			// }
+			[class^=icon-]{
 				display: none;
 			}
+			[class$=-active]{
+				display: inline-block;
+			}
+
 		}
 		&:hover{
 			background-color: #f1f1f1 !important;

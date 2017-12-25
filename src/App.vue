@@ -15,3 +15,6 @@ export default {
   height: 100%;
 }
 </style>
+<style lang="scss">
+@import './assets/scss/style.scss';
+</style>

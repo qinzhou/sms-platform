@@ -1,0 +1,73 @@
+.population-main{
+	position: relative;
+	height: 100%;
+	background-color: $gray;
+	.toolbar{
+		position: absolute;
+		left: 30px;
+		top: 10px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 3px 6px 0 rgba(189,192,194,0.79);
+		
+	}
+	.toolbar-item{
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		padding-left: 14px;
+		&:not(:nth-child(1)){
+			border-left : 1px solid $gray; 
+		}
+		.el-select{
+			width: 120px;
+		}
+		.el-input__inner{
+			border : none;
+		}
+	}
+	.area-text{
+		color: #606266;
+		font-size: 14px;
+		padding: 0 15px;
+		height: 40px;
+		line-height: 40px;
+		width: 100px;
+	}
+	[class^=el-icon-arrow]{
+		color: #c0c4cc;
+		font-size: 14px;
+		padding-right: 10px;
+	}
+
+	.area-layer{
+		position: absolute;
+		left: 30px;
+		top: 52px;
+		right: 30px;
+		overflow: hidden;
+		.el-tabs__content{
+			padding-bottom: 0;
+		}
+		.el-checkbox{
+			margin-bottom: 15px;
+			margin-left: 30px;
+		}
+		.el-checkbox-group{
+
+			padding-right: 60px;
+		}
+		.sliderup{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			font-size: 14px;
+			color: #333;
+			cursor: pointer;
+		}
+	}
+
+
+
+	
+}
