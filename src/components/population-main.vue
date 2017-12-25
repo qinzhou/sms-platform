@@ -72,7 +72,7 @@
 	</div>
 </template>
 <script>
-import VueAMap from 'vue-amap';
+/*import VueAMap from 'vue-amap';
 Vue.use(VueAMap);
 // 初始化vue-amap
 VueAMap.initAMapApiLoader({
@@ -80,7 +80,7 @@ VueAMap.initAMapApiLoader({
   key: '3e509c50fa4d02b3e22ff20f75845245',
   // 插件集合
   plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor']
-});
+});*/
 export default{
 	data() {
 	     return {
