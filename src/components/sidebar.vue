@@ -48,7 +48,8 @@
 	</div>
 </template>
 <script>
-import router from '../router/';
+// import router from '../router/';
+
 export default{
 	data () {
 	  return {
@@ -59,9 +60,13 @@ export default{
 
     },
     created (){
-    	router.afterEach((to, from) => {
-    		this.active = to.name;
-		})
+    	let name = this.$route.name;
+    	console.log(name)
+    	this.active = name;
+  //   	router.afterEach((to, from) => {
+  //   		this.active = name || to.name;
+
+		// })
     }
 }
 </script>
