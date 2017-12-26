@@ -1,7 +1,7 @@
 <template>
 	<div class="population-main">
-		<!-- <el-amap ref="map" vid="amapDemo" :center="center" :zoom="zoom" class="amap-demo">
-		      	</el-amap> -->
+		<el-amap ref="map" vid="amapDemo" :center="center" :zoom="zoom" class="amap-demo">
+		      	</el-amap>
 		<div class="toolbar">
 			<label class="toolbar-item">
 				<i class="icon-address"></i>
@@ -72,15 +72,21 @@
 	</div>
 </template>
 <script>
-/*import VueAMap from 'vue-amap';
+
+import VueAMap from 'vue-amap';
+import Vue from 'vue';
+
 Vue.use(VueAMap);
 // 初始化vue-amap
 VueAMap.initAMapApiLoader({
   // 高德的key
   key: '3e509c50fa4d02b3e22ff20f75845245',
   // 插件集合
+
   plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor']
-});*/
+});
+
+
 export default{
 	data() {
 	     return {
@@ -107,6 +113,9 @@ export default{
    		closeLayer(){
    			this.isShowLayer = false;
    		}
+	},
+	mounted (){
+		
 	}
 }
 </script>
