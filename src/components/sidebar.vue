@@ -8,37 +8,37 @@
 	      background-color="#F5F7FA"
 	      text-color="#666"
 	      active-text-color="#2C7CDB">
-	      <el-menu-item index="overview">
+	      <el-menu-item index="/overview">
 	        <i class="icon-overview"></i>
 	        <i class="icon-overview-active"></i>
 	        <span slot="title">概览</span>
 	        <!-- <i class="el-icon-arrow-right"></i> -->
 	      </el-menu-item>
-	      <el-menu-item index="task">
+	      <el-menu-item index="/task">
 	        <i class="icon-task"></i>
 	        <i class="icon-task-active"></i>
 	        <span slot="title">任务管理</span>
 			<!-- <i class="el-icon-arrow-right"></i> -->
 	      </el-menu-item>
-	      <el-menu-item index="module">
+	      <el-menu-item index="/module">
 	        <i class="icon-module"></i>
 	        <i class="icon-module-active"></i>
 	        <span slot="title">模板管理</span>
 	        <!-- <i class="el-icon-arrow-right"></i> -->
 	      </el-menu-item>
-	      <el-menu-item index="port">
+	      <el-menu-item index="/port">
 	      	<i class="icon-port"></i>
 	        <i class="icon-port-active"></i>
 	        <span slot="title">端口配置</span>
 	        <!-- <i class="el-icon-arrow-right"></i> -->
 	      </el-menu-item>
-	      <el-menu-item index="business">
+	      <el-menu-item index="/business">
 	        <i class="icon-business"></i>
 	       	<i class="icon-business-active"></i>
 	        <span slot="title">业务配件</span>
 			<!-- <i class="el-icon-arrow-right"></i> -->
 	      </el-menu-item>
-	      <el-menu-item index="authorize">
+	      <el-menu-item index="/authorize">
 	        <i class="icon-authorize"></i>
 	        <i class="icon-authorize-active"></i>
 	        <span slot="title">授权管理</span>
@@ -53,20 +53,20 @@
 export default{
 	data () {
 	  return {
-	  	active : 'overview'
+	  	active : '/overview'
 	  }
 	},
 	methods: {
 
     },
     created (){
-    	let name = this.$route.name;
-    	console.log(name)
-    	this.active = name;
-  //   	router.afterEach((to, from) => {
-  //   		this.active = name || to.name;
-
-		// })
+    	let path = this.$route.path === '/' ? '/overview' : this.$route.path;
+    	this.active = path;
+    },
+    watch : {
+    	$route(route){
+    		this.active = route.path === '/' ? '/overview' : route.path;
+    	}
     }
 }
 </script>

@@ -72,3 +72,84 @@
 .icon-select{
 	@include icon(22px,22px,'icon-select');
 }
+
+.icon-task-todo{
+	@include icon(50px,50px,'icon-task-todo');
+}
+.icon-task-unusual{
+	@include icon(50px,50px,'icon-task-unusual');
+}
+
+.icon-traffic-flow{
+	@include icon(70px,70px,'icon-traffic-flow');
+}
+
+.icon-hosptial{
+	@include icon(70px,70px,'icon-hosptial');
+}
+
+.icon-traffic-jam{
+	@include icon(160px,160px,'icon-traffic-jam');
+}
+.icon-typhoon{
+	@include icon(160px,160px,'icon-typhoon');
+}
+.icon-weather{
+	@include icon(160px,160px,'icon-weather');
+}
+.icon-accident{
+	@include icon(160px,160px,'icon-accident');
+}
+.icon-city-management{
+	@include icon(160px,160px,'icon-city-management');
+}
+.icon-add-module{
+	width: 160px;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 80px;
+	color: #C0D0DE;
+}
+
+
+.icon-account-overview{
+	@include icon(18px,18px,'icon-account-overview');
+}
+.icon-account-overview-active{
+	@include icon(18px,18px,'icon-account-overview-active');
+}
+.icon-base-info{
+	@include icon(18px,18px,'icon-base-info');
+}
+.icon-base-info-active{
+	@include icon(18px,18px,'icon-base-info-active');
+}
+.icon-security-setting{
+	@include icon(18px,18px,'icon-security-setting');
+}
+.icon-security-setting-active{
+	@include icon(18px,18px,'icon-security-setting-active');
+}
+.icon-cost-center{
+	@include icon(18px,18px,'icon-cost-center');
+}
+.icon-cost-center-active{
+	@include icon(18px,18px,'icon-cost-center-active');
+}
+
+
+.icon-email{
+	@include icon(28px,28px,'icon-email');
+}
+.icon-phone{
+	@include icon(28px,28px,'icon-phone');
+}
+.icon-householder{
+	@include icon(16px,16px,'icon-householder');
+	vertical-align: bottom;
+}
+.icon-remind{
+	@include icon(20px,20px,'icon-remind');
+}

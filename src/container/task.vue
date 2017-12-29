@@ -26,7 +26,6 @@
 		    :data="tableData4"
 		    style="width: 100%"
 		    ref="multipleTable"
-		    border
 		    @selection-change="handleSelectionChange"
 		    >
 		    <el-table-column
@@ -56,36 +55,39 @@
 		      width="120">
 		    </el-table-column>
 		    <el-table-column
-		      fixed="right"
 		      label="操作"
 		      width="260">
 		      <template slot-scope="scope">
 		        <el-button
+		          class="toggle-btn"
 		          @click.native.prevent="deleteRow(scope.$index, tableData4)"
 		          type="text"
 		          size="small">
 		          删除
 		        </el-button>
 		        <el-button
+		          class="toggle-btn"
 		          type="text"
 		          size="small">
 		          创建副本
 		        </el-button>
 		        <el-button
-		          type="text"
-		          size="small">
-		          查看
-		        </el-button>
-		        <el-button
+		          class="toggle-btn"
 		          type="text"
 		          size="small">
 		          分享
 		        </el-button>
 		        <el-button
+		          class="toggle-btn"
 		          type="text"
 		          size="small">
 		          运行
 		          <i class="el-icon-caret-right"></i>
+		        </el-button>
+		        <el-button
+		          type="text"
+		          size="small">
+		          查看
 		        </el-button>
 		      </template>
 		    </el-table-column>
@@ -103,6 +105,7 @@
 	</div>
 </template>
 <script>
+
 export default{
     data() {
       return {
@@ -149,7 +152,7 @@ export default{
           time: '2017-12-20',
           number: '2345',
          
-        }]
+        }],
       }
     },
     methods: {
@@ -173,7 +176,9 @@ export default{
 	    },
 	    currentChange(currentPage){
 	    	console.log(currentPage)
-	    }
+	    },
+
+
     },
 }
 </script>

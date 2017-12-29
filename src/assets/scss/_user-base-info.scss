@@ -1,0 +1,48 @@
+.base-info{
+	.base-wrap{
+		margin: 20px 0;
+	}
+	.subtitle{
+		font-size: 18px;
+		color: #333;
+		padding: 15px 0;
+	}
+	.base-item{
+		display: flex;
+		align-items: center;
+		margin : 15px 0;
+		font-size: 16px;
+		color: #333;
+	}
+	.item-label{
+		text-align: right;
+		min-width: 80px;
+		color: #000;
+	}
+	.item-val{
+		flex : 1;
+		margin : 0 10px;
+		.el-button{
+			margin-left: 10px;
+			padding : 6px 12px;
+		}
+	}
+	.el-textarea__inner{
+		width: 400px;
+	}
+	.save-btn{
+		margin-left: 90px;
+	}
+	.dialog-content{
+		.el-input__inner{
+			width: 180px;
+		}
+		.address-input{
+			.el-input__inner{
+				width: 360px;
+			}
+			
+		}
+	}
+
+}

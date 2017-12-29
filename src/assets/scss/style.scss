@@ -14,17 +14,33 @@
 @import "_header.scss";
 
 // 侧边栏
- @import "_sidebar.scss";
+@import "_sidebar.scss";
+ // 概览
+@import "_overview.scss";
 
 // 任务管理
- @import "_task.scss";
+@import "_task.scss";
 
  // 人口密度
  @import "_population.scss";
 
 // 人口密度头部
- @import "_population-header.scss";
+@import "_population-header.scss";
 // 人口密度侧边栏
- @import "_population-aside.scss";
+@import "_population-aside.scss";
  // 人口密度主体
- @import "_population-main.scss";
+@import "_population-main.scss";
+
+// 未读消息
+ @import "_msg-unread.scss";
+ // 接收管理
+ @import "_msg-receive.scss";
+
+ // 账户总览
+@import "_user-account-overview.scss";
+// 基本信息
+@import "_user-base-info.scss";
+
+
+// 动画库
+@import "_animate.scss";

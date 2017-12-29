@@ -1,30 +1,30 @@
 <template>
 	<el-container style="height:100%">
 	  <el-header height="50px" style="padding:0;">
-	  	<header-bar ></header-bar>
+	  	<header-bar v-if="enter"></header-bar>
 	  </el-header>
 	  <el-container>
 	    <el-aside width="220px">
 	    	<transition name="sidebar"
-	    	  enter-active-class="animated fadeInLeft"
-	    	  leave-active-class="animated fadeOutLeft">
-	    		<sidebar v-if="enter"></sidebar>
-	    	</transition>	
+	    		    	  enter-active-class="animated fadeInLeft"
+	    		    	  leave-active-class="animated fadeOutLeft">
+	    	<msg-sidebar v-if="enter"></msg-sidebar>
+	    	 </transition>
 	    </el-aside>
+	   
 	    <transition name="sidebar"
 	      enter-active-class="animated zoomIn"
 	      leave-active-class="animated zoomOut">
-	    <el-main v-if="enter">
-	    	<router-view/>
-	    	
-	    </el-main>
+		    <el-main v-if="enter">
+		    	<router-view/>
+		    </el-main>
 	    </transition>
 	  </el-container>
 	</el-container>
 </template>
 <script>
 import headerBar from '../components/header-bar';
-import sidebar from '../components/sidebar';
+import msgSidebar from '../components/msg-sidebar';
 export default{
 	data(){
 		return {
@@ -34,15 +34,17 @@ export default{
 	mounted(){
 		this.enter = true;
 	},
+	beforeDestroy(){
+		this.enter = false;
+	},
 	components : {
 		headerBar,
-		sidebar
+		msgSidebar
 	},
-	/*beforeRouteLeave (to, from, next) {
-	    this.enter = false;
-	    setTimeout(()=>{
-	    	next();
-	    },500);
-	 }*/
+	watch : {
+    	$route (route){
+    		console.log(route.path)
+    	}
+    }
 }
 </script>

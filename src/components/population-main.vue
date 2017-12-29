@@ -44,7 +44,8 @@
 		<div class="area-layer" v-show="isShowLayer">
 			<el-collapse-transition>
 				<el-tabs type="border-card">
-					  <el-tab-pane label="我的区域">
+					<el-tab-pane label="不限">不限</el-tab-pane>
+					 <el-tab-pane label="我的区域">
 							<el-checkbox-group v-model="checkList">
 							    <el-checkbox label="龙华区"></el-checkbox>
 							    <el-checkbox label="保安中心"></el-checkbox>
@@ -52,16 +53,16 @@
 							    <el-checkbox label="南山区"></el-checkbox>
 							    <el-checkbox label="罗湖区"></el-checkbox>
 							  </el-checkbox-group>
-					  </el-tab-pane>
-					  <el-tab-pane label="热门区域">热门区域</el-tab-pane>
-					  <el-tab-pane label="商业区">商业区</el-tab-pane>
-					  <el-tab-pane label="行政区">行政区</el-tab-pane>
-					  <el-tab-pane label="地铁">地铁</el-tab-pane>
-					  <el-tab-pane label="机场/车站">机场/车站</el-tab-pane>
-					  <el-tab-pane label="景区">景区</el-tab-pane>
-					  <el-tab-pane label="大学">大学</el-tab-pane>
-					  <el-tab-pane label="展会周边">展会周边</el-tab-pane>
-					  <el-tab-pane label="医院">医院</el-tab-pane>
+					</el-tab-pane>
+					<el-tab-pane label="热门区域">热门区域</el-tab-pane>
+					<el-tab-pane label="商业区">商业区</el-tab-pane>
+					<el-tab-pane label="行政区">行政区</el-tab-pane>
+					<el-tab-pane label="地铁">地铁</el-tab-pane>
+					<el-tab-pane label="机场/车站">机场/车站</el-tab-pane>
+					<el-tab-pane label="景区">景区</el-tab-pane>
+					<el-tab-pane label="大学">大学</el-tab-pane>
+					<el-tab-pane label="展会周边">展会周边</el-tab-pane>
+					<el-tab-pane label="医院">医院</el-tab-pane>
 				</el-tabs>
 			</el-collapse-transition>
 			<div class="sliderup" @click="closeLayer">

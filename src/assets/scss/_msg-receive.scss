@@ -1,0 +1,20 @@
+.msg-receive{
+	.el-tabs{
+		margin-top: 20px;
+	}
+	.el-icon-edit-outline{
+		cursor: pointer;
+		font-size: 16px;
+	}
+	.add-btn{
+		margin-top: 20px;
+	}
+	.new-item{
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		.el-input{
+			margin-right: 20px;
+		} 
+	}	
+}

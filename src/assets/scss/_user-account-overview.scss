@@ -1,0 +1,114 @@
+.account-overview{
+	.el-card{
+		margin-bottom: 15px;
+		.el-card__header{
+			padding: 10px 20px;
+			font-size: 16px;
+			color: #333;
+		}
+		.card-head{
+			display: flex;
+			align-items: center;
+		}
+		.title{
+			flex : 1;
+		}
+		.tip{
+			font-size: 12px;
+			color: #666666;
+		}
+		.subtitle{
+			color: #717171;
+			font-size: 14px;
+		}
+
+	}
+	.line-title{
+		font-size: 14px;
+		color: #666666;
+	}
+	.account-avatar-wrap{
+		display: flex;
+		align-items: center;
+	}
+	.avatar{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border : 4px solid $gray;
+	}
+	.desc-box{
+		flex : 1;
+		margin-left: 20px;
+		.username{
+			font-size: 20px;
+			color: #333333;
+			margin-bottom: 10px;
+		}
+
+	}
+	.sign-box{
+		display: flex;
+		align-items: flex-end;
+		[class^=icon]{
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		.icon-householder{
+			margin-right: 0;
+		}
+		.householder-btn{
+			color: #3a8ee6;
+			border-color: #3a8ee6;
+			padding : 2px 4px;
+			font-size: 12px;
+			margin-right: 10px;
+		}
+		.el-button--text{
+			padding: 0;
+			font-size: 14px;
+			margin-right: 10px;
+			color: $primary;
+		}
+		.el-icon-edit-outline{
+			color: #3a8ee6;
+			font-size: 20px;
+			cursor: pointer;
+		}
+	}
+	.balance-info{
+
+	}
+	.balance-title-box{
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		color: #717171;
+		margin-bottom: 24px;
+		.balance-title{
+			flex : 1;
+		}
+	}
+	.cash-box{
+		display: flex;
+		align-items: center;
+		.cash{
+			font-size: 42px;
+			color: #333333;
+			flex : 1;
+		}
+		.el-button{
+			margin-left: 10px;
+			padding : 8px 20px;
+		}
+	}
+	.both-border{
+		border-left: 1px solid $gray;
+		border-right: 1px solid $gray;
+	}
+	.card-padding{
+		.el-card__body{
+			padding-top: 0;
+		}
+	}
+}

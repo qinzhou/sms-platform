@@ -3,16 +3,105 @@
 	color: #333;
 	font-size: 18px;
 	
-	text-indent : 10px;
+	text-indent : 15px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid $gray;
+	display: flex;
+	align-items: center;
+	.title{
+		flex : 1;
+	}
+	.el-button{
+		background-color: #f1f1f1;
+		border-color : #f1f1f1;
+		color: #333;
+	}
+	.back{
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		color: #2C7CDB;
+		cursor: pointer;
+	}
+
 	&:after{
 		content : '';
 		position: absolute;
 		left: 0;
-		top: 0;
-		width: 4px;
+		top: 50%;
+		margin-top: -16px;
+		width: 5px;
 		height: 24px;
+		border-radius: 30%;
 		background-color: $primary;
+	}
+}
+
+.c-msg-tip{
+	background-color: #F5F7FA;
+	display: flex;
+	align-items: center;
+	padding : 8px 20px;
+	margin : 15px 0;
+	.el-icon-warning{
+		margin-right: 6px;
+		color: #798d9b;
+	}
+	.msg-text{
+		font-size: 14px;
+		color: #333333;
+	}
+}
+
+.c-box-card{
+	margin-bottom: 15px;
+	.el-card__header{
+		padding: 10px 14px;
+		font-size: 16px;
+	}
+	.oper-btn{
+		color: #999;
+		font-size: 14px;
+	}
+
+}
+
+.c-task-box{
+	display: flex;
+	align-items: center;
+	.task-state-wrap{
+		flex : 1;
+	}
+	.task-number{
+		font-size: 40px;
+	}
+	.task-state{
+		font-size: 14px;
+		color: #717171;
+	}
+	.el-button{
+		align-self: flex-end;
+	}
+	[class^=icon-task]{
+		margin:0 14px;
+	}
+	.fz34{
+		font-size: 34px;
+	}
+	.v-line{
+		width: 1px;
+		background-color: $gray;
+		align-self: stretch;
+		margin-left: 40px;
+		margin-right: 26px;
+	}
+}
+
+.c-table-toolbar{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	.btn-group{
+		flex : 1;
 	}
 }

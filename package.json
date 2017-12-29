@@ -10,8 +10,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "element-ui": "^2.0.8",
     "sass-loader": "^6.0.6",
+    "v-charts": "^1.14.0",
     "vue": "^2.5.2",
     "vue-amap": "^0.4.4",
     "vue-router": "^3.0.1"

@@ -1,6 +1,6 @@
 <template>
 	<div class="population-header">
-		<i class="icon-back"></i>
+		<i class="icon-back" @click="back"></i>
 		<h2 class="population-title">20181218人群密集通知</h2>
 		<div class="population-menus">
 			<div class="population-btn">
@@ -28,6 +28,10 @@
 </template>
 <script>
 export default{
-
+	methods : {
+		back(){
+			this.$router.go(-1);
+		}
+	}
 }
 </script>

@@ -31,9 +31,9 @@
 						</li>
 					</ul>
 					<ul class="user-option-select">
-						<li class="user-select-item">
-							<i class="el-icon-error"></i>
-							<div class="select-label">运营商</div>
+						<li class="user-select-item" v-for="(item,index) in checkList">
+							<i class="el-icon-error" @click="deleteCheck(index)"></i>
+							<div class="select-label">{{item}}</div>
 							<el-select v-model="value" placeholder="基础">
 							    <el-option
 							      v-for="item in options"
@@ -43,38 +43,14 @@
 							    </el-option>
 						    </el-select>
 						</li>
-						<li class="user-select-item">
-							<i class="el-icon-error"></i>
-							<div class="select-label">用户归属</div>
-							<el-select v-model="value" placeholder="省内">
-							    <el-option
-							      v-for="item in options"
-							      :key="item.value"
-							      :label="item.label"
-							      :value="item.value">
-							    </el-option>
-						    </el-select>
-						</li>
-						<li class="user-select-item">
-							<i class="el-icon-error"></i>
-							<div class="select-label">用户性质</div>
-							<el-select v-model="value" placeholder="全网">
-							    <el-option
-							      v-for="item in options"
-							      :key="item.value"
-							      :label="item.label"
-							      :value="item.value">
-							    </el-option>
-						    </el-select>
-						</li>
 					</ul>
-					<div class="add-select-item">
+					<!-- <div class="add-select-item" @click="showLayer">
 						<i class="el-icon-plus"></i>
-					</div>
+					</div> -->
 				</div>
 				<div class="tab-oper">
 					<el-button-group>
-					  <el-button type="text" @click="showLayer">更多因子</el-button>
+					  <el-button type="text" @click="toggleLayer">更多因子</el-button>
 					  <el-button type="text">存为模板</el-button>
 					</el-button-group>
 				</div>
@@ -198,8 +174,8 @@
 						<el-checkbox-group v-model="checkList" @change="checkboxChange">
 						    <el-checkbox label="用户迁移"></el-checkbox>
 						    <el-checkbox label="用户消费"></el-checkbox>
-						    <el-checkbox label="用户性质"></el-checkbox>
-						     <el-checkbox label="用户类型"></el-checkbox>
+						    <el-checkbox label="用户性质1"></el-checkbox>
+						     <el-checkbox label="用户类型1"></el-checkbox>
 						</el-checkbox-group>
 					</li>
 				</ul>
@@ -233,7 +209,7 @@ export default {
         textarea3: '',
         maxlength : 500,
         currentLength : 0,
-        checkList : ['运营商'],
+        checkList : ['运营商','用户归属'],
         isShowLayer : false
       };
     },
@@ -253,6 +229,12 @@ export default {
       },
       hideLayer(){
       	this.isShowLayer = false;
+      },
+      toggleLayer(){
+      	this.isShowLayer = !this.isShowLayer;
+      },
+      deleteCheck(index){
+      	this.checkList.splice(index,1);
       }
     }
  };	

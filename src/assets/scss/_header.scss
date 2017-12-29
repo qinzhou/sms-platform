@@ -11,6 +11,7 @@
 		width: 70px;
 		height: 24px;
 		margin-right: 22px;
+		cursor: pointer;
 	}
 	.avatar{
 		width: 38px;
@@ -26,7 +27,7 @@
 		display: flex;
 		align-items: center;
 	}
-	.el-dropdown-link{
+	.el-dropdown-link,.link{
 		font-size: 14px;
 		color: #fff;
 		cursor: pointer;
@@ -50,4 +51,54 @@
 	}
 
 
+}
+
+
+.popover-wrap{
+	.balance-wrap{
+		display: flex;
+		align-items: center;
+		padding-left: 14px;
+	}
+	.balance-text{
+		flex : 1;
+		font-size: 14px;
+		color: #333333;
+	}
+	.cash-wrap{
+		padding-left: 14px;
+		font-size: 14px;
+		color: #333333;
+		border-bottom: 1px solid $gray;
+		.cash{
+			font-size: 32px;
+		}
+	}
+	.popover-menu{
+		border-right : none;
+		padding : 0 10px;
+		.el-menu-item{
+			padding-left: 5px !important;
+			border-bottom: 1px solid $gray;
+			&:hover{
+				background-color: #fff;
+				color: $primary;
+			}
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+	.popover-btn{
+		border-top: 1px solid $gray;
+		text-align: center;
+		font-size: 14px;
+		color: #333333;
+		padding-top: 20px;
+		padding-bottom: 8px;
+		cursor: pointer;
+		&:hover{
+			color: $primary;
+		}
+	}
 }
